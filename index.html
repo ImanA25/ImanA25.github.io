@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <h1>My Todo List</h1>
+      <p>Stay organized and productive! 💪</p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="todo-container">
+      <!-- Input Section -->
+      <div class="input-section">
+        <input
+          type="text"
+          id="todoInput"
+          placeholder="What do you need to do?"
+          maxlength="50"
+        />
+        <button id="addTodoBtn" class="primary-btn">Add Task</button>
+      </div>
+
+      <!-- Filter and Stats -->
+      <div class="utilities">
+        <div class="filter">
+          <label for="filter">Filter Tasks:</label>
+          <select id="filter">
+            <option value="all">All</option>
+            <option value="pending">Pending</option>
+            <option value="completed">Completed</option>
+          </select>
+        </div>
+        <div class="stats">
+          <p>Total: <span id="totalCount">0</span></p>
+          <p>Completed: <span id="completedCount">0</span></p>
+        </div>
+      </div>
+
+      <!-- Todo List -->
+      <ul id="todoList" class="todo-list"></ul>
+
+      <!-- Clear Buttons -->
+      <div class="buttons">
+        <button id="clearCompletedBtn" class="secondary-btn">
+          Clear Completed
+        </button>
+        <button id="clearAllBtn" class="secondary-btn">Clear All</button>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2025 Todo List App. Designed with ❤️</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
